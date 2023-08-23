@@ -69,4 +69,37 @@ footer {
   width: 100%;
   padding: 10px;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust background color as per your requirement */
+}
+
+.block {
+  position: relative;
+  display: flex;
+  padding: 0px;
+  margin: -40px;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  flex: 1;
+
+}
+
+.content2 {
+  text-align: center;
+  color: #fff;
+  flex: 1;
+}
+
+.glass-effect {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 100px;
+  animation: floatAnimation 10s infinite;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  box-shadow: 0 2px 30px 10px rgba(0, 0, 0, 0.3);
+
+  
 }

@@ -6,9 +6,9 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   
-  background: linear-gradient(-40deg, #0040a0, #5b4fff, #3f9df5) !important;
   background-size: 800% 800%;
   animation: gradientAnimation 15s ease infinite;
+  background: linear-gradient(-40deg, #0040a0, #5b4fff, #3f9df5) !important;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,6 +16,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+
 
 a {
   font-weight: 500;
@@ -56,6 +58,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.nickimg {
+  width: 200px;
+  height: 200px;
 }
 
 

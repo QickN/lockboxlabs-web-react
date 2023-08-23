@@ -1,32 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 
-function App() {
 
+import './App.css';
+import Antonyms from './Antonyms.jsx';
+import Privacy from './PrivacyPolicies';
+import Support from './Support';
+import OurTeam from './OurTeam';
+import OurWork from './OurWork';
+
+function HomePage() {
+
+  const navigate = useNavigate();
+  
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="ourTeam.html">our team</a></li>
-            <li><a href="support.html">support</a></li>
-            <li><a href="synapse.html">privacy policies</a></li>
-            <li><a href="https://qickn.github.io/Antonyms" target='_blank'>antonyms</a></li>
+    <div className="Home">
+      <header className="HomeHeader">
+        <nav className="HomeNav">
+          <ul className="HomeNavLinks">
+            <li><Link to="/ourteam">our team</Link></li>
+            <li><Link to="/support">support</Link></li>
+            <li><Link to="/privacy">privacy policies</Link></li>
+            <li><Link to="/antonyms">antonyms</Link></li>
           </ul>
         </nav>
-        </header>
+      </header>
       <h1>lockboxlabs</h1>
       <div className="card">
-        <button>
+        <button onClick={() => navigate("/ourwork")}>
           our work
         </button>
       </div>
       <footer>&copy; Copyright lockboxlabs, LLC.</footer>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+
+      <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/antonyms" element={<Antonyms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/ourteam" element={<OurTeam />} />
+          <Route path="/ourwork" element={<OurWork />} />
+
+      </Routes>
       
-    </>
+    </Router>
   )
 }
 
-export default App
+export default App;
