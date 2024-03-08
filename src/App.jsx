@@ -18,7 +18,6 @@ function HomePage() {
       <header className="HomeHeader">
         <nav className="HomeNav">
           <ul className="HomeNavLinks">
-            <li><Link to="/ourteam">our team</Link></li>
             <li><Link to="/support">support</Link></li>
             <li><Link to="/privacy">privacy policies</Link></li>
             <li><Link to="/antonyms">antonyms</Link></li>
