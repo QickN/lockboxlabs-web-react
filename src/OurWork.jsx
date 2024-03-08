@@ -10,7 +10,7 @@ function OurWork() {
     <div class="glass-effect">
         <div class="block">
            <div class="content">
-               <img src="/src/assets/images/AppIconSynapse.png" alt='synapse-logo' class="nickimg"/>
+               <img src="/public/images/AppIconSynapse.png" alt='synapse-logo' class="nickimg"/>
                <h2>Synapse | Brain Games</h2>
                <p>a minigame application</p>
                <button onClick={handleClick}>link to app store</button>
