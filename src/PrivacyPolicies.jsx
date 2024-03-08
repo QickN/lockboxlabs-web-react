@@ -62,7 +62,13 @@ function PrivacyPolicies() {
                 
             </div>
       </p>
+
+    <div>
+      <footer>&copy; Copyright lockboxlabs, LLC.</footer>
+
     </div>
+    </div>
+    
   );
 }
 

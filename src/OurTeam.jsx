@@ -8,17 +8,20 @@ function OurTeam() {
                <div class="content">
                    <img src="/images/nick.png" class="nickimg"/>
                    <h2>nick</h2>
-                   <p>Founder, CEO | Programmer</p>
+                   <p>programmer</p>
                </div>
                <div class="content2">
                    <img src="/assets/matt.PNG" class="nickimg"/>
                    <h2>adrien</h2>
-                   <p>CFO | Antonyms puzzle maker)</p>
+                   <p>antonyms puzzle maker</p>
                </div>
            </div>
            
            
        </div>
+
+      <footer>&copy; Copyright lockboxlabs, LLC.</footer>
+
     </div>
   );
 }
