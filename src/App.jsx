@@ -6,7 +6,6 @@ import './App.css';
 import Antonyms from './Antonyms.jsx';
 import Privacy from './PrivacyPolicies';
 import Support from './Support';
-import OurTeam from './OurTeam';
 import OurWork from './OurWork';
 
 function HomePage() {
