@@ -44,7 +44,6 @@ function App() {
           <Route path="/antonyms" element={<Antonyms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/support" element={<Support />} />
-          <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/ourwork" element={<OurWork />} />
 
       </Routes>
