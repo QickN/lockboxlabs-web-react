@@ -13,7 +13,7 @@ function OurWork() {
                <img src="/public/Images/AppIconSynapse.png" alt='synapse-logo' class="nickimg"/>
                <h2>Synapse | Brain Games</h2>
                <p>a minigame application</p>
-               <button onClick={handleClick}>link to app store</button>
+               <button onClick={handleClick}>link to app store.</button>
            </div>
        </div>
    </div>
