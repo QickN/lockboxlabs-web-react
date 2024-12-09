@@ -16,6 +16,14 @@ function OurWork() {
                <button onClick={handleClick}>link to app store.</button>
            </div>
        </div>
+       <div class="block">
+           <div class="content">
+               <img src="/public/Images/AppIconSynapse.png" alt='Pebble-logo' class="nickimg"/>
+               <h2>Pebble | Daily Savings</h2>
+               <p>a savings application</p>
+               <button>In Development</button>
+           </div>
+       </div>
    </div>
     <div>
       <footer>&copy; Copyright lockboxlabs, LLC.</footer>
