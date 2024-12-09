@@ -1,8 +1,11 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  /* Add padding to avoid content going under fixed header and footer */
+  padding-top: 120px; 
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 
 header {
@@ -14,15 +17,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
   z-index: 1000;
-  animation: bounceDown .5s ease;
+  animation: bounceDown 0.5s ease;
   background-color: rgba(0, 0, 0, 0.1); 
-
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: right;
 }
 
@@ -30,7 +34,6 @@ nav ul li {
   display: inline-block;
   padding-left: 10px;
   padding-right: 20px;
-  
 }
 
 nav ul li a {
@@ -38,6 +41,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav ul li a::before {
@@ -55,51 +59,106 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
   background-color: #000000;
-  
 }
 
 footer {
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: center;  /* Adjust this if you don't want the content centered */
-  position: fixed;  /* This will make it stick to the bottom */
-  bottom: 0;  /* Position it at the bottom */
+  justify-content: center;
+  position: fixed; 
+  bottom: 0;
   left: 0;
   width: 100%;
   padding: 10px;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust background color as per your requirement */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .block {
   position: relative;
   display: flex;
-  padding: 0px;
-  margin: -40px;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0; 
+  padding: 20px;
 }
 
 .content {
   text-align: center;
   color: #fff;
   flex: 1;
-
+  padding: 20px;
 }
 
 .content2 {
   text-align: center;
   color: #fff;
   flex: 1;
+  padding: 20px;
 }
 
 .glass-effect {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  padding: 100px;
+  padding: 10px;
   animation: floatAnimation 10s infinite;
   transform-style: preserve-3d;
   transform: translateZ(0);
   box-shadow: 0 2px 30px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  max-width: 1000px;
+}
 
-  
+.nickimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.nickimg:hover {
+  transform: scale(1.05);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+  color: #fff;
+}
+button:hover {
+  border-color: #646cff;
+  background-color: #333;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Keyframes for animations */
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes bounceDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(20%);
+  }
+  80% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

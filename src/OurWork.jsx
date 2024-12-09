@@ -3,33 +3,30 @@ import React from 'react';
 function OurWork() {
   const handleClick = () => {
     window.open('https://apps.apple.com/us/app/synapse-brain-games/id6457516219', '_blank');
-  }
+  };
 
   return (
     <div>
-    <div class="glass-effect">
-        <div class="block">
-           <div class="content">
-               <img src="/public/Images/AppIconSynapse.png" alt='synapse-logo' class="nickimg"/>
-               <h2>Synapse | Brain Games</h2>
-               <p>a minigame application</p>
-               <button onClick={handleClick}>link to app store.</button>
-           </div>
-       </div>
-       <div class="block">
-           <div class="content">
-               <img src="/public/Images/AppIconSynapse.png" alt='Pebble-logo' class="nickimg"/>
-               <h2>Pebble | Daily Savings</h2>
-               <p>a savings application</p>
-               <button>In Development</button>
-           </div>
-       </div>
-   </div>
-    <div>
+      <div className="glass-effect">
+        <div className="block">
+          <div className="content">
+            <img src="/public/Images/AppIconSynapse.png" alt="synapse-logo" className="nickimg"/>
+            <h2>Synapse | Brain Games</h2>
+            <p>A mini-game application that challenges your mind.</p>
+            <button onClick={handleClick}>Link to App Store</button>
+          </div>
+        </div>
+        <div className="block">
+          <div className="content">
+            <img src="" alt="Pebble-logo" className="nickimg"/>
+            <h2>Pebble | Daily Savings</h2>
+            <p>An upcoming savings application to help you grow your wealth daily.</p>
+            <button disabled style={{opacity:0.7, cursor:'default'}}>In Development</button>
+          </div>
+        </div>
+      </div>
       <footer>&copy; Copyright lockboxlabs, LLC.</footer>
-
     </div>
-</div>
   );
 }
 
