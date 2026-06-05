@@ -1,5 +1,4 @@
 *{
-    /* border: 2px solid red; */
     color: white;
   }
   
@@ -19,7 +18,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     max-width: 316px;
-    margin: 30px auto; /* centers the grid with some vertical spacing */
+    margin: 30px auto;
   
   }
   
@@ -34,9 +33,9 @@
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 10px; /* gives rounded corners to buttons */
-    transition: background-color 0.3s ease; /* smooth transition for hover effects */
-    box-shadow:  0 5px 6px rgba(0, 0, 0, 0.5);  /* This is the drop shadow */;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
   
   }
   
@@ -79,17 +78,21 @@
     border-radius: 20px;
     font-size: 1.5rem;
     font-weight: bold;
-    box-shadow:  0 5px 6px rgba(0, 0, 0, 0.5);  /* This is the drop shadow */;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .Submit:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
   }
   
   .Submit:hover{
     background-color: rgb(0, 68, 255);
-    box-shadow:0 0 15px #646cff,     /* This is the glow */
-    
+    box-shadow: 0 0 15px #646cff;
   }
   
   .button.correct {
-    background-color: #4CAF50; /* Green for correct answers, but you can choose any color */
+    background-color: #4CAF50;
     color: white;
   }
   

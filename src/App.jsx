@@ -1,12 +1,11 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 
 
-import './App.css';
 import Antonyms from './Antonyms.jsx';
 import Privacy from './PrivacyPolicies';
 import Support from './Support';
 import OurWork from './OurWork';
+import './App.css';
 
 function HomePage() {
 
